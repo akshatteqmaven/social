@@ -1,0 +1,57 @@
+.test {
+
+    animation-name: HrWp;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+
+@keyframes HrWp {
+
+    0% {
+        transform: scaleX(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scaleX(1);
+        opacity: 1;
+    }
+}
+
+.ani {
+
+
+    animation-name: text-shadow-multicolor;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+
+    /* shorthand
+		animation: text-shadow-multicolor 2s ease 0s infinite normal none;*/
+}
+
+@keyframes text-shadow-multicolor {
+
+    0% {
+        text-shadow: 0 0px 15px rgb(217, 16, 217);
+    }
+
+    33% {
+        text-shadow: 0 0px 15px rgb(23, 206, 206);
+    }
+
+    66% {
+        text-shadow: 0 0px 10px rgb(11, 225, 11);
+    }
+
+    100% {
+        text-shadow: 0 0px 10px rgb(228, 13, 13);
+    }
+}
