@@ -1,5 +1,4 @@
 .test {
-
     animation-name: HrWp;
     animation-duration: 0.5s;
     animation-timing-function: ease-in;
@@ -23,8 +22,6 @@
 }
 
 .ani {
-
-
     animation-name: text-shadow-multicolor;
     animation-duration: 2s;
     animation-timing-function: ease;
@@ -53,5 +50,41 @@
 
     100% {
         text-shadow: 0 0px 10px rgb(228, 13, 13);
+    }
+}
+
+.error_alert {
+    background: #fcebea;
+    color: #cc1f1a;
+    border-color: #ef5753;
+    animation-name: text-blur-out;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-delay: 2s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+.success {
+    animation-name: text-blur-out;
+    animation-duration: 1.3s;
+    animation-timing-function: ease;
+    animation-delay: 3s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+
+
+@keyframes text-blur-out {
+
+    0% {
+        filter: blur(0);
+    }
+
+    100% {
+        filter: blur(12px) opacity(0%);
     }
 }

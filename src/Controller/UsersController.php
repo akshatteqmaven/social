@@ -4,11 +4,14 @@ declare(strict_types=1);
 
 namespace App\Controller;
 
-use Cake\ORM\TableRegistry;
-use Cake\Mailer\Email;
+
 use Cake\Mailer\Mailer;
-use Cake\Mailer\TransportFactory;
 use Cake\View\View;
+use Cake\Mailer\TransportFactory;
+use Cake\Auth\DefaultPasswordHasher;
+use Cake\Utility\Security;
+use Cake\ORM\TableRegistry;
+use Composer\Script\ScriptEvents;
 
 /**
  * Users Controller
@@ -107,6 +110,7 @@ class UsersController extends AppController
      */
     public function add()
     {
+        // $this->viewBuilder()->setLayout('mydefault');
         $user = $this->Users->newEmptyEntity();
         if ($this->request->is('post')) {
             $data = $this->request->getData();
@@ -268,7 +272,7 @@ class UsersController extends AppController
         $this->set(compact('post'));
     }
 
-    public function commentedit($id = null, $postid, $userid)
+    public function commentedit($id = null, $postid = null, $userid = null)
     {
         $comment = $this->Comment->get($id, [
             'contain' => [],
@@ -307,7 +311,7 @@ class UsersController extends AppController
         return $this->redirect(['action' => 'index']);
     }
 
-    public function postdelete($id = null, $userid)
+    public function postdelete($id = null, $userid = null)
     {
         $this->request->allowMethod(['post', 'delete']);
         $post = $this->Post->get($id);
@@ -320,7 +324,7 @@ class UsersController extends AppController
         return $this->redirect(['controller' => 'users', 'action' => 'view', $userid]);
     }
 
-    public function commentdelete($id = null, $postid, $userid)
+    public function commentdelete($id = null, $postid = null, $userid = null)
     {
         $this->request->allowMethod(['post', 'delete']);
         $comment = $this->Comment->get($id);
@@ -350,14 +354,12 @@ class UsersController extends AppController
                 'controller' => 'Users',
                 'action' => 'index',
             ]);
-            // $session = $this->request->getSession(); //read session data
-            // $session->write('login', true);
-
+            $this->Flash->success(__('You have successfully logged In.'));
             return $this->redirect($redirect);
         }
         // display error if user submitted and authentication failed
         if ($this->request->is('post') && !$result->isValid()) {
-            $this->Flash->error(__('Invalid username or password'));
+            $this->Flash->error(__('Please enter your username or password.'));
         }
     }
 
@@ -367,6 +369,7 @@ class UsersController extends AppController
         // regardless of POST or GET, redirect if user is logged in
         if ($result && $result->isValid()) {
             $this->Authentication->logout();
+            $this->Flash->success(__('You have successfully logged out.'));
             return $this->redirect(['controller' => 'Users', 'action' => 'login']);
         }
     }
@@ -378,24 +381,29 @@ class UsersController extends AppController
             $email = $this->request->getData('email');
             $users = TableRegistry::get("Users");
             $user = $users->find('all')->where(['email' => $email])->first();
-            if ($user) {
-                $token = rand(10000, 100000);
-                $user->token = $token;
-                if ($users->save($user)) {
-                    $mailer = new Mailer('default');
-                    $mailer->setTransport('gmail');
-                    $mailer->setFrom(['abc@gmail.com' => 'Rahul']);
-                    $mailer->setTo($email);
-                    $mailer->setEmailFormat('html');
-                    $mailer->setSubject('Reset password link');
-                    $mailer->deliver('<a href="http://localhost:8765/users/reset?token=' . $token . '">Click here</a> for reset your password');
-
-                    $this->Flash->success(__('Reset email send successfully.'));
-                }
+            if ($total = $users->find('all')->where(['email' => $email])->count() == 0) {
+                $this->Flash->error(__('Email is not registered in system'));
             } else {
-                $this->Flash->error(__('Please enter valid credential..'));
+                if ($user) {
+                    $token = rand(10000, 100000);
+                    $user->token = $token;
+                    if ($users->save($user)) {
+                        $mailer = new Mailer('default');
+                        $mailer->setTransport('gmail');
+                        $mailer->setFrom(['abc@gmail.com' => 'Akshat']);
+                        $mailer->setTo($email);
+                        $mailer->setEmailFormat('html');
+                        $mailer->setSubject('Reset password link');
+                        $mailer->deliver('<a href="http://localhost:8765/users/reset?token=' . $token . '">Click here</a> for reset your password');
+
+                        $this->Flash->success(__('Reset email send successfully.'));
+                    }
+                } else {
+                    $this->Flash->error(__('Please enter valid credential..'));
+                }
             }
         }
+
         $this->set(compact('user'));
     }
 

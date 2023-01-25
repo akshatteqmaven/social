@@ -16,7 +16,7 @@
         <div class="users form content">
             <?= $this->Form->create() ?>
             <fieldset>
-                <legend><?= __('Login User') ?></legend>
+                <h2><?= __('Login User') ?></h2>
                 <?php
                 echo $this->Form->control('email', ['required' => false]);
                 echo $this->Form->control('password', ['required' => false]);

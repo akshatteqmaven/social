@@ -72,20 +72,22 @@ return [
      *
      * See app.php for more configuration options.
      */
+    // 'EmailTransport' => [
+    //     'default' => [
+    //         'host' => 'localhost',
+    //         'port' => 25,
+    //         'username' => null,
+    //         'password' => null,
+    //         'client' => null,
+    //         'url' => env('EMAIL_TRANSPORT_DEFAULT_URL', null),
+    //     ],
+    //    
     'EmailTransport' => [
-        'default' => [
-            'host' => 'localhost',
-            'port' => 25,
-            'username' => null,
-            'password' => null,
-            'client' => null,
-            'url' => env('EMAIL_TRANSPORT_DEFAULT_URL', null),
-        ],
         'gmail' => [
             'host' => 'smtp.gmail.com',
             'port' => 587,
-            'username' => 'abc@gmail.com',
-            'password' => 'xxxxxxxxxxxxxxxxx',
+            'username' => 'akshatsood1234@gmail.com', //eg: sample[at]gmail.com
+            'password' => 'aejxrdknpwmunfoc', //email password aejxrdknpwmunfoc
             'className' => 'Smtp',
             'tls' => true,
             'client' => null,

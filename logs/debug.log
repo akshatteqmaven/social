@@ -17727,3 +17727,937 @@ Cake\Http\Runner::run() /var/www/html/social-main/vendor/cakephp/cakephp/src/Htt
 Cake\Http\Server::run() /var/www/html/social-main/vendor/cakephp/cakephp/src/Http/Server.php, line 90
 [main] /var/www/html/social-main/webroot/index.php, line 40
 
+2023-01-24 05:40:54 notice: Optional parameter $id declared before required parameter $userid is implicitly treated as a required parameter
+Request URL: /users/login
+Referer URL: http://localhost:8765/
+Client IP: 127.0.0.1
+Trace:
+include /var/www/html/social/vendor/composer/ClassLoader.php, line 444
+Composer\Autoload\includeFile /var/www/html/social/vendor/composer/ClassLoader.php, line 444
+Composer\Autoload\ClassLoader::loadClass() /var/www/html/social/vendor/composer/ClassLoader.php, line 322
+class_exists [internal], line ??
+Cake\Core\App::_classExistsInBase() /var/www/html/social/vendor/cakephp/cakephp/src/Core/App.php, line 161
+Cake\Core\App::className() /var/www/html/social/vendor/cakephp/cakephp/src/Core/App.php, line 68
+Cake\Controller\ControllerFactory::getControllerClass() /var/www/html/social/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 337
+Cake\Controller\ControllerFactory::create() /var/www/html/social/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 72
+Cake\Http\BaseApplication::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 318
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 77
+Authentication\Middleware\AuthenticationMiddleware::process() /var/www/html/social/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php, line 124
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Middleware\CsrfProtectionMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php, line 174
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Middleware\BodyParserMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 157
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Routing\Middleware\RoutingMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Routing\Middleware\AssetMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+DebugKit\Middleware\DebugKitMiddleware::process() /var/www/html/social/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Runner::run() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 58
+Cake\Http\Server::run() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /var/www/html/social/webroot/index.php, line 40
+
+2023-01-24 05:40:54 notice: Optional parameter $id declared before required parameter $userid is implicitly treated as a required parameter
+Request URL: /users/login
+Referer URL: http://localhost:8765/
+Client IP: 127.0.0.1
+Trace:
+include /var/www/html/social/vendor/composer/ClassLoader.php, line 444
+Composer\Autoload\includeFile /var/www/html/social/vendor/composer/ClassLoader.php, line 444
+Composer\Autoload\ClassLoader::loadClass() /var/www/html/social/vendor/composer/ClassLoader.php, line 322
+class_exists [internal], line ??
+Cake\Core\App::_classExistsInBase() /var/www/html/social/vendor/cakephp/cakephp/src/Core/App.php, line 161
+Cake\Core\App::className() /var/www/html/social/vendor/cakephp/cakephp/src/Core/App.php, line 68
+Cake\Controller\ControllerFactory::getControllerClass() /var/www/html/social/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 337
+Cake\Controller\ControllerFactory::create() /var/www/html/social/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 72
+Cake\Http\BaseApplication::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 318
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 77
+Authentication\Middleware\AuthenticationMiddleware::process() /var/www/html/social/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php, line 124
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Middleware\CsrfProtectionMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php, line 174
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Middleware\BodyParserMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 157
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Routing\Middleware\RoutingMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Routing\Middleware\AssetMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+DebugKit\Middleware\DebugKitMiddleware::process() /var/www/html/social/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Runner::run() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 58
+Cake\Http\Server::run() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /var/www/html/social/webroot/index.php, line 40
+
+2023-01-24 05:40:54 notice: Optional parameter $id declared before required parameter $userid is implicitly treated as a required parameter
+Request URL: /users/login
+Referer URL: http://localhost:8765/
+Client IP: 127.0.0.1
+Trace:
+include /var/www/html/social/vendor/composer/ClassLoader.php, line 444
+Composer\Autoload\includeFile /var/www/html/social/vendor/composer/ClassLoader.php, line 444
+Composer\Autoload\ClassLoader::loadClass() /var/www/html/social/vendor/composer/ClassLoader.php, line 322
+class_exists [internal], line ??
+Cake\Core\App::_classExistsInBase() /var/www/html/social/vendor/cakephp/cakephp/src/Core/App.php, line 161
+Cake\Core\App::className() /var/www/html/social/vendor/cakephp/cakephp/src/Core/App.php, line 68
+Cake\Controller\ControllerFactory::getControllerClass() /var/www/html/social/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 337
+Cake\Controller\ControllerFactory::create() /var/www/html/social/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 72
+Cake\Http\BaseApplication::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 318
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 77
+Authentication\Middleware\AuthenticationMiddleware::process() /var/www/html/social/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php, line 124
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Middleware\CsrfProtectionMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php, line 174
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Middleware\BodyParserMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 157
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Routing\Middleware\RoutingMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Routing\Middleware\AssetMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+DebugKit\Middleware\DebugKitMiddleware::process() /var/www/html/social/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Runner::run() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 58
+Cake\Http\Server::run() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /var/www/html/social/webroot/index.php, line 40
+
+2023-01-24 07:26:55 notice: Optional parameter $id declared before required parameter $userid is implicitly treated as a required parameter
+Request URL: /users/reset/
+Client IP: 127.0.0.1
+Trace:
+include /var/www/html/social/vendor/composer/ClassLoader.php, line 444
+Composer\Autoload\includeFile /var/www/html/social/vendor/composer/ClassLoader.php, line 444
+Composer\Autoload\ClassLoader::loadClass() /var/www/html/social/vendor/composer/ClassLoader.php, line 322
+class_exists [internal], line ??
+Cake\Core\App::_classExistsInBase() /var/www/html/social/vendor/cakephp/cakephp/src/Core/App.php, line 161
+Cake\Core\App::className() /var/www/html/social/vendor/cakephp/cakephp/src/Core/App.php, line 68
+Cake\Controller\ControllerFactory::getControllerClass() /var/www/html/social/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 337
+Cake\Controller\ControllerFactory::create() /var/www/html/social/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 72
+Cake\Http\BaseApplication::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 318
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 77
+Authentication\Middleware\AuthenticationMiddleware::process() /var/www/html/social/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php, line 124
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Middleware\CsrfProtectionMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php, line 174
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Middleware\BodyParserMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 157
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Routing\Middleware\RoutingMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Routing\Middleware\AssetMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+DebugKit\Middleware\DebugKitMiddleware::process() /var/www/html/social/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Runner::run() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 58
+Cake\Http\Server::run() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /var/www/html/social/webroot/index.php, line 40
+
+2023-01-24 07:26:55 notice: Optional parameter $id declared before required parameter $userid is implicitly treated as a required parameter
+Request URL: /users/reset/
+Client IP: 127.0.0.1
+Trace:
+include /var/www/html/social/vendor/composer/ClassLoader.php, line 444
+Composer\Autoload\includeFile /var/www/html/social/vendor/composer/ClassLoader.php, line 444
+Composer\Autoload\ClassLoader::loadClass() /var/www/html/social/vendor/composer/ClassLoader.php, line 322
+class_exists [internal], line ??
+Cake\Core\App::_classExistsInBase() /var/www/html/social/vendor/cakephp/cakephp/src/Core/App.php, line 161
+Cake\Core\App::className() /var/www/html/social/vendor/cakephp/cakephp/src/Core/App.php, line 68
+Cake\Controller\ControllerFactory::getControllerClass() /var/www/html/social/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 337
+Cake\Controller\ControllerFactory::create() /var/www/html/social/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 72
+Cake\Http\BaseApplication::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 318
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 77
+Authentication\Middleware\AuthenticationMiddleware::process() /var/www/html/social/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php, line 124
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Middleware\CsrfProtectionMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php, line 174
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Middleware\BodyParserMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 157
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Routing\Middleware\RoutingMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Routing\Middleware\AssetMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+DebugKit\Middleware\DebugKitMiddleware::process() /var/www/html/social/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Runner::run() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 58
+Cake\Http\Server::run() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /var/www/html/social/webroot/index.php, line 40
+
+2023-01-24 07:26:55 notice: Optional parameter $id declared before required parameter $userid is implicitly treated as a required parameter
+Request URL: /users/reset/
+Client IP: 127.0.0.1
+Trace:
+include /var/www/html/social/vendor/composer/ClassLoader.php, line 444
+Composer\Autoload\includeFile /var/www/html/social/vendor/composer/ClassLoader.php, line 444
+Composer\Autoload\ClassLoader::loadClass() /var/www/html/social/vendor/composer/ClassLoader.php, line 322
+class_exists [internal], line ??
+Cake\Core\App::_classExistsInBase() /var/www/html/social/vendor/cakephp/cakephp/src/Core/App.php, line 161
+Cake\Core\App::className() /var/www/html/social/vendor/cakephp/cakephp/src/Core/App.php, line 68
+Cake\Controller\ControllerFactory::getControllerClass() /var/www/html/social/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 337
+Cake\Controller\ControllerFactory::create() /var/www/html/social/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 72
+Cake\Http\BaseApplication::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 318
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 77
+Authentication\Middleware\AuthenticationMiddleware::process() /var/www/html/social/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php, line 124
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Middleware\CsrfProtectionMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php, line 174
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Middleware\BodyParserMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 157
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Routing\Middleware\RoutingMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Routing\Middleware\AssetMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+DebugKit\Middleware\DebugKitMiddleware::process() /var/www/html/social/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Runner::run() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 58
+Cake\Http\Server::run() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /var/www/html/social/webroot/index.php, line 40
+
+2023-01-24 07:28:01 notice: Optional parameter $id declared before required parameter $userid is implicitly treated as a required parameter
+Request URL: /users/login?redirect=%2Fusers%2Findex
+Client IP: 127.0.0.1
+Trace:
+include /var/www/html/social/vendor/composer/ClassLoader.php, line 444
+Composer\Autoload\includeFile /var/www/html/social/vendor/composer/ClassLoader.php, line 444
+Composer\Autoload\ClassLoader::loadClass() /var/www/html/social/vendor/composer/ClassLoader.php, line 322
+class_exists [internal], line ??
+Cake\Core\App::_classExistsInBase() /var/www/html/social/vendor/cakephp/cakephp/src/Core/App.php, line 161
+Cake\Core\App::className() /var/www/html/social/vendor/cakephp/cakephp/src/Core/App.php, line 68
+Cake\Controller\ControllerFactory::getControllerClass() /var/www/html/social/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 337
+Cake\Controller\ControllerFactory::create() /var/www/html/social/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 72
+Cake\Http\BaseApplication::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 318
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 77
+Authentication\Middleware\AuthenticationMiddleware::process() /var/www/html/social/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php, line 124
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Middleware\CsrfProtectionMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php, line 174
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Middleware\BodyParserMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 157
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Routing\Middleware\RoutingMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Routing\Middleware\AssetMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+DebugKit\Middleware\DebugKitMiddleware::process() /var/www/html/social/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Runner::run() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 58
+Cake\Http\Server::run() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /var/www/html/social/webroot/index.php, line 40
+
+2023-01-24 07:28:01 notice: Optional parameter $id declared before required parameter $userid is implicitly treated as a required parameter
+Request URL: /users/login?redirect=%2Fusers%2Findex
+Client IP: 127.0.0.1
+Trace:
+include /var/www/html/social/vendor/composer/ClassLoader.php, line 444
+Composer\Autoload\includeFile /var/www/html/social/vendor/composer/ClassLoader.php, line 444
+Composer\Autoload\ClassLoader::loadClass() /var/www/html/social/vendor/composer/ClassLoader.php, line 322
+class_exists [internal], line ??
+Cake\Core\App::_classExistsInBase() /var/www/html/social/vendor/cakephp/cakephp/src/Core/App.php, line 161
+Cake\Core\App::className() /var/www/html/social/vendor/cakephp/cakephp/src/Core/App.php, line 68
+Cake\Controller\ControllerFactory::getControllerClass() /var/www/html/social/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 337
+Cake\Controller\ControllerFactory::create() /var/www/html/social/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 72
+Cake\Http\BaseApplication::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 318
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 77
+Authentication\Middleware\AuthenticationMiddleware::process() /var/www/html/social/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php, line 124
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Middleware\CsrfProtectionMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php, line 174
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Middleware\BodyParserMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 157
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Routing\Middleware\RoutingMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Routing\Middleware\AssetMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+DebugKit\Middleware\DebugKitMiddleware::process() /var/www/html/social/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Runner::run() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 58
+Cake\Http\Server::run() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /var/www/html/social/webroot/index.php, line 40
+
+2023-01-24 07:28:01 notice: Optional parameter $id declared before required parameter $userid is implicitly treated as a required parameter
+Request URL: /users/login?redirect=%2Fusers%2Findex
+Client IP: 127.0.0.1
+Trace:
+include /var/www/html/social/vendor/composer/ClassLoader.php, line 444
+Composer\Autoload\includeFile /var/www/html/social/vendor/composer/ClassLoader.php, line 444
+Composer\Autoload\ClassLoader::loadClass() /var/www/html/social/vendor/composer/ClassLoader.php, line 322
+class_exists [internal], line ??
+Cake\Core\App::_classExistsInBase() /var/www/html/social/vendor/cakephp/cakephp/src/Core/App.php, line 161
+Cake\Core\App::className() /var/www/html/social/vendor/cakephp/cakephp/src/Core/App.php, line 68
+Cake\Controller\ControllerFactory::getControllerClass() /var/www/html/social/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 337
+Cake\Controller\ControllerFactory::create() /var/www/html/social/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 72
+Cake\Http\BaseApplication::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 318
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 77
+Authentication\Middleware\AuthenticationMiddleware::process() /var/www/html/social/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php, line 124
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Middleware\CsrfProtectionMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php, line 174
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Middleware\BodyParserMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 157
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Routing\Middleware\RoutingMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Routing\Middleware\AssetMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+DebugKit\Middleware\DebugKitMiddleware::process() /var/www/html/social/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Runner::run() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 58
+Cake\Http\Server::run() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /var/www/html/social/webroot/index.php, line 40
+
+2023-01-24 07:30:01 notice: Optional parameter $id declared before required parameter $userid is implicitly treated as a required parameter
+Request URL: /users/index
+Client IP: 127.0.0.1
+Trace:
+include /var/www/html/social/vendor/composer/ClassLoader.php, line 444
+Composer\Autoload\includeFile /var/www/html/social/vendor/composer/ClassLoader.php, line 444
+Composer\Autoload\ClassLoader::loadClass() /var/www/html/social/vendor/composer/ClassLoader.php, line 322
+class_exists [internal], line ??
+Cake\Core\App::_classExistsInBase() /var/www/html/social/vendor/cakephp/cakephp/src/Core/App.php, line 161
+Cake\Core\App::className() /var/www/html/social/vendor/cakephp/cakephp/src/Core/App.php, line 68
+Cake\Controller\ControllerFactory::getControllerClass() /var/www/html/social/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 337
+Cake\Controller\ControllerFactory::create() /var/www/html/social/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 72
+Cake\Http\BaseApplication::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 318
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 77
+Authentication\Middleware\AuthenticationMiddleware::process() /var/www/html/social/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php, line 124
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Middleware\CsrfProtectionMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php, line 174
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Middleware\BodyParserMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 157
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Routing\Middleware\RoutingMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Routing\Middleware\AssetMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+DebugKit\Middleware\DebugKitMiddleware::process() /var/www/html/social/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Runner::run() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 58
+Cake\Http\Server::run() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /var/www/html/social/webroot/index.php, line 40
+
+2023-01-24 07:30:01 notice: Optional parameter $id declared before required parameter $userid is implicitly treated as a required parameter
+Request URL: /users/index
+Client IP: 127.0.0.1
+Trace:
+include /var/www/html/social/vendor/composer/ClassLoader.php, line 444
+Composer\Autoload\includeFile /var/www/html/social/vendor/composer/ClassLoader.php, line 444
+Composer\Autoload\ClassLoader::loadClass() /var/www/html/social/vendor/composer/ClassLoader.php, line 322
+class_exists [internal], line ??
+Cake\Core\App::_classExistsInBase() /var/www/html/social/vendor/cakephp/cakephp/src/Core/App.php, line 161
+Cake\Core\App::className() /var/www/html/social/vendor/cakephp/cakephp/src/Core/App.php, line 68
+Cake\Controller\ControllerFactory::getControllerClass() /var/www/html/social/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 337
+Cake\Controller\ControllerFactory::create() /var/www/html/social/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 72
+Cake\Http\BaseApplication::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 318
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 77
+Authentication\Middleware\AuthenticationMiddleware::process() /var/www/html/social/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php, line 124
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Middleware\CsrfProtectionMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php, line 174
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Middleware\BodyParserMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 157
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Routing\Middleware\RoutingMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Routing\Middleware\AssetMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+DebugKit\Middleware\DebugKitMiddleware::process() /var/www/html/social/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Runner::run() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 58
+Cake\Http\Server::run() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /var/www/html/social/webroot/index.php, line 40
+
+2023-01-24 07:30:01 notice: Optional parameter $id declared before required parameter $userid is implicitly treated as a required parameter
+Request URL: /users/index
+Client IP: 127.0.0.1
+Trace:
+include /var/www/html/social/vendor/composer/ClassLoader.php, line 444
+Composer\Autoload\includeFile /var/www/html/social/vendor/composer/ClassLoader.php, line 444
+Composer\Autoload\ClassLoader::loadClass() /var/www/html/social/vendor/composer/ClassLoader.php, line 322
+class_exists [internal], line ??
+Cake\Core\App::_classExistsInBase() /var/www/html/social/vendor/cakephp/cakephp/src/Core/App.php, line 161
+Cake\Core\App::className() /var/www/html/social/vendor/cakephp/cakephp/src/Core/App.php, line 68
+Cake\Controller\ControllerFactory::getControllerClass() /var/www/html/social/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 337
+Cake\Controller\ControllerFactory::create() /var/www/html/social/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 72
+Cake\Http\BaseApplication::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 318
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 77
+Authentication\Middleware\AuthenticationMiddleware::process() /var/www/html/social/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php, line 124
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Middleware\CsrfProtectionMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php, line 174
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Middleware\BodyParserMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 157
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Routing\Middleware\RoutingMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Routing\Middleware\AssetMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+DebugKit\Middleware\DebugKitMiddleware::process() /var/www/html/social/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Runner::run() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 58
+Cake\Http\Server::run() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /var/www/html/social/webroot/index.php, line 40
+
+2023-01-24 07:31:00 notice: Optional parameter $id declared before required parameter $userid is implicitly treated as a required parameter
+Request URL: /users/reset
+Client IP: 127.0.0.1
+Trace:
+include /var/www/html/social/vendor/composer/ClassLoader.php, line 444
+Composer\Autoload\includeFile /var/www/html/social/vendor/composer/ClassLoader.php, line 444
+Composer\Autoload\ClassLoader::loadClass() /var/www/html/social/vendor/composer/ClassLoader.php, line 322
+class_exists [internal], line ??
+Cake\Core\App::_classExistsInBase() /var/www/html/social/vendor/cakephp/cakephp/src/Core/App.php, line 161
+Cake\Core\App::className() /var/www/html/social/vendor/cakephp/cakephp/src/Core/App.php, line 68
+Cake\Controller\ControllerFactory::getControllerClass() /var/www/html/social/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 337
+Cake\Controller\ControllerFactory::create() /var/www/html/social/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 72
+Cake\Http\BaseApplication::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 318
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 77
+Authentication\Middleware\AuthenticationMiddleware::process() /var/www/html/social/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php, line 124
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Middleware\CsrfProtectionMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php, line 174
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Middleware\BodyParserMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 157
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Routing\Middleware\RoutingMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Routing\Middleware\AssetMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+DebugKit\Middleware\DebugKitMiddleware::process() /var/www/html/social/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Runner::run() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 58
+Cake\Http\Server::run() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /var/www/html/social/webroot/index.php, line 40
+
+2023-01-24 07:31:00 notice: Optional parameter $id declared before required parameter $userid is implicitly treated as a required parameter
+Request URL: /users/reset
+Client IP: 127.0.0.1
+Trace:
+include /var/www/html/social/vendor/composer/ClassLoader.php, line 444
+Composer\Autoload\includeFile /var/www/html/social/vendor/composer/ClassLoader.php, line 444
+Composer\Autoload\ClassLoader::loadClass() /var/www/html/social/vendor/composer/ClassLoader.php, line 322
+class_exists [internal], line ??
+Cake\Core\App::_classExistsInBase() /var/www/html/social/vendor/cakephp/cakephp/src/Core/App.php, line 161
+Cake\Core\App::className() /var/www/html/social/vendor/cakephp/cakephp/src/Core/App.php, line 68
+Cake\Controller\ControllerFactory::getControllerClass() /var/www/html/social/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 337
+Cake\Controller\ControllerFactory::create() /var/www/html/social/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 72
+Cake\Http\BaseApplication::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 318
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 77
+Authentication\Middleware\AuthenticationMiddleware::process() /var/www/html/social/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php, line 124
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Middleware\CsrfProtectionMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php, line 174
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Middleware\BodyParserMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 157
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Routing\Middleware\RoutingMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Routing\Middleware\AssetMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+DebugKit\Middleware\DebugKitMiddleware::process() /var/www/html/social/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Runner::run() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 58
+Cake\Http\Server::run() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /var/www/html/social/webroot/index.php, line 40
+
+2023-01-24 07:31:00 notice: Optional parameter $id declared before required parameter $userid is implicitly treated as a required parameter
+Request URL: /users/reset
+Client IP: 127.0.0.1
+Trace:
+include /var/www/html/social/vendor/composer/ClassLoader.php, line 444
+Composer\Autoload\includeFile /var/www/html/social/vendor/composer/ClassLoader.php, line 444
+Composer\Autoload\ClassLoader::loadClass() /var/www/html/social/vendor/composer/ClassLoader.php, line 322
+class_exists [internal], line ??
+Cake\Core\App::_classExistsInBase() /var/www/html/social/vendor/cakephp/cakephp/src/Core/App.php, line 161
+Cake\Core\App::className() /var/www/html/social/vendor/cakephp/cakephp/src/Core/App.php, line 68
+Cake\Controller\ControllerFactory::getControllerClass() /var/www/html/social/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 337
+Cake\Controller\ControllerFactory::create() /var/www/html/social/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 72
+Cake\Http\BaseApplication::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 318
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 77
+Authentication\Middleware\AuthenticationMiddleware::process() /var/www/html/social/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php, line 124
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Middleware\CsrfProtectionMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php, line 174
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Middleware\BodyParserMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 157
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Routing\Middleware\RoutingMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Routing\Middleware\AssetMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+DebugKit\Middleware\DebugKitMiddleware::process() /var/www/html/social/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Runner::run() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 58
+Cake\Http\Server::run() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /var/www/html/social/webroot/index.php, line 40
+
+2023-01-24 07:43:31 notice: Optional parameter $id declared before required parameter $userid is implicitly treated as a required parameter
+Request URL: /users/login?redirect=%2F
+Referer URL: http://localhost:8765/users/login
+Client IP: 127.0.0.1
+Trace:
+include /var/www/html/social/vendor/composer/ClassLoader.php, line 444
+Composer\Autoload\includeFile /var/www/html/social/vendor/composer/ClassLoader.php, line 444
+Composer\Autoload\ClassLoader::loadClass() /var/www/html/social/vendor/composer/ClassLoader.php, line 322
+class_exists [internal], line ??
+Cake\Core\App::_classExistsInBase() /var/www/html/social/vendor/cakephp/cakephp/src/Core/App.php, line 161
+Cake\Core\App::className() /var/www/html/social/vendor/cakephp/cakephp/src/Core/App.php, line 68
+Cake\Controller\ControllerFactory::getControllerClass() /var/www/html/social/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 337
+Cake\Controller\ControllerFactory::create() /var/www/html/social/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 72
+Cake\Http\BaseApplication::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 318
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 77
+Authentication\Middleware\AuthenticationMiddleware::process() /var/www/html/social/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php, line 124
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Middleware\CsrfProtectionMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php, line 174
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Middleware\BodyParserMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 157
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Routing\Middleware\RoutingMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Routing\Middleware\AssetMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+DebugKit\Middleware\DebugKitMiddleware::process() /var/www/html/social/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Runner::run() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 58
+Cake\Http\Server::run() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /var/www/html/social/webroot/index.php, line 40
+
+2023-01-24 07:43:31 notice: Optional parameter $id declared before required parameter $userid is implicitly treated as a required parameter
+Request URL: /users/login?redirect=%2F
+Referer URL: http://localhost:8765/users/login
+Client IP: 127.0.0.1
+Trace:
+include /var/www/html/social/vendor/composer/ClassLoader.php, line 444
+Composer\Autoload\includeFile /var/www/html/social/vendor/composer/ClassLoader.php, line 444
+Composer\Autoload\ClassLoader::loadClass() /var/www/html/social/vendor/composer/ClassLoader.php, line 322
+class_exists [internal], line ??
+Cake\Core\App::_classExistsInBase() /var/www/html/social/vendor/cakephp/cakephp/src/Core/App.php, line 161
+Cake\Core\App::className() /var/www/html/social/vendor/cakephp/cakephp/src/Core/App.php, line 68
+Cake\Controller\ControllerFactory::getControllerClass() /var/www/html/social/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 337
+Cake\Controller\ControllerFactory::create() /var/www/html/social/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 72
+Cake\Http\BaseApplication::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 318
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 77
+Authentication\Middleware\AuthenticationMiddleware::process() /var/www/html/social/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php, line 124
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Middleware\CsrfProtectionMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php, line 174
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Middleware\BodyParserMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 157
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Routing\Middleware\RoutingMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Routing\Middleware\AssetMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+DebugKit\Middleware\DebugKitMiddleware::process() /var/www/html/social/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Runner::run() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 58
+Cake\Http\Server::run() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /var/www/html/social/webroot/index.php, line 40
+
+2023-01-24 07:43:31 notice: Optional parameter $id declared before required parameter $userid is implicitly treated as a required parameter
+Request URL: /users/login?redirect=%2F
+Referer URL: http://localhost:8765/users/login
+Client IP: 127.0.0.1
+Trace:
+include /var/www/html/social/vendor/composer/ClassLoader.php, line 444
+Composer\Autoload\includeFile /var/www/html/social/vendor/composer/ClassLoader.php, line 444
+Composer\Autoload\ClassLoader::loadClass() /var/www/html/social/vendor/composer/ClassLoader.php, line 322
+class_exists [internal], line ??
+Cake\Core\App::_classExistsInBase() /var/www/html/social/vendor/cakephp/cakephp/src/Core/App.php, line 161
+Cake\Core\App::className() /var/www/html/social/vendor/cakephp/cakephp/src/Core/App.php, line 68
+Cake\Controller\ControllerFactory::getControllerClass() /var/www/html/social/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 337
+Cake\Controller\ControllerFactory::create() /var/www/html/social/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 72
+Cake\Http\BaseApplication::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 318
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 77
+Authentication\Middleware\AuthenticationMiddleware::process() /var/www/html/social/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php, line 124
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Middleware\CsrfProtectionMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php, line 174
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Middleware\BodyParserMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 157
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Routing\Middleware\RoutingMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Routing\Middleware\AssetMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+DebugKit\Middleware\DebugKitMiddleware::process() /var/www/html/social/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Runner::run() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 58
+Cake\Http\Server::run() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /var/www/html/social/webroot/index.php, line 40
+
+2023-01-24 07:50:33 notice: Optional parameter $id declared before required parameter $userid is implicitly treated as a required parameter
+Request URL: /users/login?redirect=%2F
+Referer URL: http://localhost:8765/users/login?redirect=%2F
+Client IP: 127.0.0.1
+Trace:
+include /var/www/html/social/vendor/composer/ClassLoader.php, line 444
+Composer\Autoload\includeFile /var/www/html/social/vendor/composer/ClassLoader.php, line 444
+Composer\Autoload\ClassLoader::loadClass() /var/www/html/social/vendor/composer/ClassLoader.php, line 322
+class_exists [internal], line ??
+Cake\Core\App::_classExistsInBase() /var/www/html/social/vendor/cakephp/cakephp/src/Core/App.php, line 161
+Cake\Core\App::className() /var/www/html/social/vendor/cakephp/cakephp/src/Core/App.php, line 68
+Cake\Controller\ControllerFactory::getControllerClass() /var/www/html/social/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 337
+Cake\Controller\ControllerFactory::create() /var/www/html/social/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 72
+Cake\Http\BaseApplication::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 318
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 77
+Authentication\Middleware\AuthenticationMiddleware::process() /var/www/html/social/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php, line 124
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Middleware\CsrfProtectionMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php, line 174
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Middleware\BodyParserMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 157
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Routing\Middleware\RoutingMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Routing\Middleware\AssetMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+DebugKit\Middleware\DebugKitMiddleware::process() /var/www/html/social/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Runner::run() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 58
+Cake\Http\Server::run() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /var/www/html/social/webroot/index.php, line 40
+
+2023-01-24 07:50:33 notice: Optional parameter $id declared before required parameter $userid is implicitly treated as a required parameter
+Request URL: /users/login?redirect=%2F
+Referer URL: http://localhost:8765/users/login?redirect=%2F
+Client IP: 127.0.0.1
+Trace:
+include /var/www/html/social/vendor/composer/ClassLoader.php, line 444
+Composer\Autoload\includeFile /var/www/html/social/vendor/composer/ClassLoader.php, line 444
+Composer\Autoload\ClassLoader::loadClass() /var/www/html/social/vendor/composer/ClassLoader.php, line 322
+class_exists [internal], line ??
+Cake\Core\App::_classExistsInBase() /var/www/html/social/vendor/cakephp/cakephp/src/Core/App.php, line 161
+Cake\Core\App::className() /var/www/html/social/vendor/cakephp/cakephp/src/Core/App.php, line 68
+Cake\Controller\ControllerFactory::getControllerClass() /var/www/html/social/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 337
+Cake\Controller\ControllerFactory::create() /var/www/html/social/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 72
+Cake\Http\BaseApplication::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 318
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 77
+Authentication\Middleware\AuthenticationMiddleware::process() /var/www/html/social/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php, line 124
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Middleware\CsrfProtectionMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php, line 174
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Middleware\BodyParserMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 157
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Routing\Middleware\RoutingMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Routing\Middleware\AssetMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+DebugKit\Middleware\DebugKitMiddleware::process() /var/www/html/social/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Runner::run() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 58
+Cake\Http\Server::run() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /var/www/html/social/webroot/index.php, line 40
+
+2023-01-24 07:50:33 notice: Optional parameter $id declared before required parameter $userid is implicitly treated as a required parameter
+Request URL: /users/login?redirect=%2F
+Referer URL: http://localhost:8765/users/login?redirect=%2F
+Client IP: 127.0.0.1
+Trace:
+include /var/www/html/social/vendor/composer/ClassLoader.php, line 444
+Composer\Autoload\includeFile /var/www/html/social/vendor/composer/ClassLoader.php, line 444
+Composer\Autoload\ClassLoader::loadClass() /var/www/html/social/vendor/composer/ClassLoader.php, line 322
+class_exists [internal], line ??
+Cake\Core\App::_classExistsInBase() /var/www/html/social/vendor/cakephp/cakephp/src/Core/App.php, line 161
+Cake\Core\App::className() /var/www/html/social/vendor/cakephp/cakephp/src/Core/App.php, line 68
+Cake\Controller\ControllerFactory::getControllerClass() /var/www/html/social/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 337
+Cake\Controller\ControllerFactory::create() /var/www/html/social/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 72
+Cake\Http\BaseApplication::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 318
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 77
+Authentication\Middleware\AuthenticationMiddleware::process() /var/www/html/social/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php, line 124
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Middleware\CsrfProtectionMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php, line 174
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Middleware\BodyParserMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 157
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Routing\Middleware\RoutingMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Routing\Middleware\AssetMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+DebugKit\Middleware\DebugKitMiddleware::process() /var/www/html/social/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Runner::run() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 58
+Cake\Http\Server::run() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /var/www/html/social/webroot/index.php, line 40
+
+2023-01-24 07:51:38 notice: Optional parameter $id declared before required parameter $userid is implicitly treated as a required parameter
+Request URL: /users/login?redirect=%2Fusers
+Referer URL: http://localhost:8765/users/login?redirect=%2Fusers
+Client IP: 127.0.0.1
+Trace:
+include /var/www/html/social/vendor/composer/ClassLoader.php, line 444
+Composer\Autoload\includeFile /var/www/html/social/vendor/composer/ClassLoader.php, line 444
+Composer\Autoload\ClassLoader::loadClass() /var/www/html/social/vendor/composer/ClassLoader.php, line 322
+class_exists [internal], line ??
+Cake\Core\App::_classExistsInBase() /var/www/html/social/vendor/cakephp/cakephp/src/Core/App.php, line 161
+Cake\Core\App::className() /var/www/html/social/vendor/cakephp/cakephp/src/Core/App.php, line 68
+Cake\Controller\ControllerFactory::getControllerClass() /var/www/html/social/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 337
+Cake\Controller\ControllerFactory::create() /var/www/html/social/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 72
+Cake\Http\BaseApplication::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 318
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 77
+Authentication\Middleware\AuthenticationMiddleware::process() /var/www/html/social/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php, line 124
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Middleware\CsrfProtectionMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php, line 174
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Middleware\BodyParserMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 157
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Routing\Middleware\RoutingMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Routing\Middleware\AssetMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+DebugKit\Middleware\DebugKitMiddleware::process() /var/www/html/social/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Runner::run() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 58
+Cake\Http\Server::run() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /var/www/html/social/webroot/index.php, line 40
+
+2023-01-24 07:51:38 notice: Optional parameter $id declared before required parameter $userid is implicitly treated as a required parameter
+Request URL: /users/login?redirect=%2Fusers
+Referer URL: http://localhost:8765/users/login?redirect=%2Fusers
+Client IP: 127.0.0.1
+Trace:
+include /var/www/html/social/vendor/composer/ClassLoader.php, line 444
+Composer\Autoload\includeFile /var/www/html/social/vendor/composer/ClassLoader.php, line 444
+Composer\Autoload\ClassLoader::loadClass() /var/www/html/social/vendor/composer/ClassLoader.php, line 322
+class_exists [internal], line ??
+Cake\Core\App::_classExistsInBase() /var/www/html/social/vendor/cakephp/cakephp/src/Core/App.php, line 161
+Cake\Core\App::className() /var/www/html/social/vendor/cakephp/cakephp/src/Core/App.php, line 68
+Cake\Controller\ControllerFactory::getControllerClass() /var/www/html/social/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 337
+Cake\Controller\ControllerFactory::create() /var/www/html/social/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 72
+Cake\Http\BaseApplication::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 318
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 77
+Authentication\Middleware\AuthenticationMiddleware::process() /var/www/html/social/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php, line 124
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Middleware\CsrfProtectionMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php, line 174
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Middleware\BodyParserMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 157
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Routing\Middleware\RoutingMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Routing\Middleware\AssetMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+DebugKit\Middleware\DebugKitMiddleware::process() /var/www/html/social/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Runner::run() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 58
+Cake\Http\Server::run() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /var/www/html/social/webroot/index.php, line 40
+
+2023-01-24 07:51:38 notice: Optional parameter $id declared before required parameter $userid is implicitly treated as a required parameter
+Request URL: /users/login?redirect=%2Fusers
+Referer URL: http://localhost:8765/users/login?redirect=%2Fusers
+Client IP: 127.0.0.1
+Trace:
+include /var/www/html/social/vendor/composer/ClassLoader.php, line 444
+Composer\Autoload\includeFile /var/www/html/social/vendor/composer/ClassLoader.php, line 444
+Composer\Autoload\ClassLoader::loadClass() /var/www/html/social/vendor/composer/ClassLoader.php, line 322
+class_exists [internal], line ??
+Cake\Core\App::_classExistsInBase() /var/www/html/social/vendor/cakephp/cakephp/src/Core/App.php, line 161
+Cake\Core\App::className() /var/www/html/social/vendor/cakephp/cakephp/src/Core/App.php, line 68
+Cake\Controller\ControllerFactory::getControllerClass() /var/www/html/social/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 337
+Cake\Controller\ControllerFactory::create() /var/www/html/social/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 72
+Cake\Http\BaseApplication::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 318
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 77
+Authentication\Middleware\AuthenticationMiddleware::process() /var/www/html/social/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php, line 124
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Middleware\CsrfProtectionMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php, line 174
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Middleware\BodyParserMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 157
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Routing\Middleware\RoutingMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Routing\Middleware\AssetMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+DebugKit\Middleware\DebugKitMiddleware::process() /var/www/html/social/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Runner::run() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 58
+Cake\Http\Server::run() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /var/www/html/social/webroot/index.php, line 40
+
+2023-01-24 07:52:47 notice: Optional parameter $id declared before required parameter $userid is implicitly treated as a required parameter
+Request URL: /users/login
+Client IP: 127.0.0.1
+Trace:
+include /var/www/html/social/vendor/composer/ClassLoader.php, line 444
+Composer\Autoload\includeFile /var/www/html/social/vendor/composer/ClassLoader.php, line 444
+Composer\Autoload\ClassLoader::loadClass() /var/www/html/social/vendor/composer/ClassLoader.php, line 322
+class_exists [internal], line ??
+Cake\Core\App::_classExistsInBase() /var/www/html/social/vendor/cakephp/cakephp/src/Core/App.php, line 161
+Cake\Core\App::className() /var/www/html/social/vendor/cakephp/cakephp/src/Core/App.php, line 68
+Cake\Controller\ControllerFactory::getControllerClass() /var/www/html/social/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 337
+Cake\Controller\ControllerFactory::create() /var/www/html/social/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 72
+Cake\Http\BaseApplication::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 318
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 77
+Authentication\Middleware\AuthenticationMiddleware::process() /var/www/html/social/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php, line 124
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Middleware\CsrfProtectionMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php, line 174
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Middleware\BodyParserMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 157
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Routing\Middleware\RoutingMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Routing\Middleware\AssetMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+DebugKit\Middleware\DebugKitMiddleware::process() /var/www/html/social/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Runner::run() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 58
+Cake\Http\Server::run() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /var/www/html/social/webroot/index.php, line 40
+
+2023-01-24 07:52:47 notice: Optional parameter $id declared before required parameter $userid is implicitly treated as a required parameter
+Request URL: /users/login
+Client IP: 127.0.0.1
+Trace:
+include /var/www/html/social/vendor/composer/ClassLoader.php, line 444
+Composer\Autoload\includeFile /var/www/html/social/vendor/composer/ClassLoader.php, line 444
+Composer\Autoload\ClassLoader::loadClass() /var/www/html/social/vendor/composer/ClassLoader.php, line 322
+class_exists [internal], line ??
+Cake\Core\App::_classExistsInBase() /var/www/html/social/vendor/cakephp/cakephp/src/Core/App.php, line 161
+Cake\Core\App::className() /var/www/html/social/vendor/cakephp/cakephp/src/Core/App.php, line 68
+Cake\Controller\ControllerFactory::getControllerClass() /var/www/html/social/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 337
+Cake\Controller\ControllerFactory::create() /var/www/html/social/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 72
+Cake\Http\BaseApplication::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 318
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 77
+Authentication\Middleware\AuthenticationMiddleware::process() /var/www/html/social/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php, line 124
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Middleware\CsrfProtectionMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php, line 174
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Middleware\BodyParserMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 157
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Routing\Middleware\RoutingMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Routing\Middleware\AssetMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+DebugKit\Middleware\DebugKitMiddleware::process() /var/www/html/social/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Runner::run() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 58
+Cake\Http\Server::run() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /var/www/html/social/webroot/index.php, line 40
+
+2023-01-24 07:57:33 notice: Undefined property: UsersController::$flash in /var/www/html/social/src/Controller/UsersController.php on line 355
+Request URL: /users/login
+Referer URL: http://localhost:8765/users/login
+Client IP: 127.0.0.1
+Trace:
+Cake\Controller\Controller::__get() /var/www/html/social/vendor/cakephp/cakephp/src/Controller/Controller.php, line 337
+App\Controller\UsersController::login() /var/www/html/social/src/Controller/UsersController.php, line 355
+Cake\Controller\Controller::invokeAction() /var/www/html/social/vendor/cakephp/cakephp/src/Controller/Controller.php, line 547
+Cake\Controller\ControllerFactory::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() /var/www/html/social/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 320
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 77
+Authentication\Middleware\AuthenticationMiddleware::process() /var/www/html/social/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php, line 124
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Middleware\CsrfProtectionMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php, line 174
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Middleware\BodyParserMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 162
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Routing\Middleware\RoutingMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Routing\Middleware\AssetMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+DebugKit\Middleware\DebugKitMiddleware::process() /var/www/html/social/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Runner::run() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 58
+Cake\Http\Server::run() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /var/www/html/social/webroot/index.php, line 40
+
+2023-01-24 07:57:54 notice: Undefined property: UsersController::$flash in /var/www/html/social/src/Controller/UsersController.php on line 355
+Request URL: /users/login
+Referer URL: http://localhost:8765/users/login
+Client IP: 127.0.0.1
+Trace:
+Cake\Controller\Controller::__get() /var/www/html/social/vendor/cakephp/cakephp/src/Controller/Controller.php, line 337
+App\Controller\UsersController::login() /var/www/html/social/src/Controller/UsersController.php, line 355
+Cake\Controller\Controller::invokeAction() /var/www/html/social/vendor/cakephp/cakephp/src/Controller/Controller.php, line 547
+Cake\Controller\ControllerFactory::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() /var/www/html/social/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 320
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 77
+Authentication\Middleware\AuthenticationMiddleware::process() /var/www/html/social/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php, line 124
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Middleware\CsrfProtectionMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php, line 174
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Middleware\BodyParserMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 162
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Routing\Middleware\RoutingMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Routing\Middleware\AssetMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+DebugKit\Middleware\DebugKitMiddleware::process() /var/www/html/social/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Runner::run() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 58
+Cake\Http\Server::run() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /var/www/html/social/webroot/index.php, line 40
+
+2023-01-24 07:58:04 notice: Undefined property: UsersController::$flash in /var/www/html/social/src/Controller/UsersController.php on line 355
+Request URL: /users/login
+Referer URL: http://localhost:8765/users/login
+Client IP: 127.0.0.1
+Trace:
+Cake\Controller\Controller::__get() /var/www/html/social/vendor/cakephp/cakephp/src/Controller/Controller.php, line 337
+App\Controller\UsersController::login() /var/www/html/social/src/Controller/UsersController.php, line 355
+Cake\Controller\Controller::invokeAction() /var/www/html/social/vendor/cakephp/cakephp/src/Controller/Controller.php, line 547
+Cake\Controller\ControllerFactory::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory::invoke() /var/www/html/social/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php, line 114
+Cake\Http\BaseApplication::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/BaseApplication.php, line 320
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 77
+Authentication\Middleware\AuthenticationMiddleware::process() /var/www/html/social/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php, line 124
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Middleware\CsrfProtectionMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php, line 174
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Middleware\BodyParserMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php, line 162
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Routing\Middleware\RoutingMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php, line 186
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Routing\Middleware\AssetMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php, line 68
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Error\Middleware\ErrorHandlerMiddleware::process() /var/www/html/social/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php, line 131
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+DebugKit\Middleware\DebugKitMiddleware::process() /var/www/html/social/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php, line 60
+Cake\Http\Runner::handle() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 73
+Cake\Http\Runner::run() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Runner.php, line 58
+Cake\Http\Server::run() /var/www/html/social/vendor/cakephp/cakephp/src/Http/Server.php, line 90
+[main] /var/www/html/social/webroot/index.php, line 40
+

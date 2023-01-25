@@ -53,23 +53,6 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
         <div class="top-nav-title">
             <a href="<?= $this->Url->build('/') ?>"><span>Home</span>Page</a>
         </div>
-        <?php
-        // $session = $this->request->getSession();
-        // if ($session->read('login')) {
-        //     echo '
-        //         <div class="top-nav-title">
-        //         <a href="' . $this->Url->build('/Users/logout') . '">Logout</a>
-        //         </div>
-        //         ';
-        //     } else {
-        //         echo '
-        //         <div class="top-nav-links">
-        //         <a href="' . $this->Url->build('/Users/add') . '">Register</a>
-        //         <a href="' . $this->Url->build('/Users/login') . '">Login</a>
-        //         </div>
-        //     ';
-        // }
-        ?>
     </nav>
     <main class="main">
         <div class="container">
