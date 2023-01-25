@@ -37,22 +37,12 @@ class UsersController extends AppController
 
     public function index()
     {
-        $users = $this->paginate($this->Users);
-        // $user = $this->Authentication->getIdentity();
-        // echo '<pre>';
-        // print_r($user);
-        // die;
         $user = $this->Authentication->getIdentity();
-        $this->set(compact('user'));
-        $this->set(compact('users'));
-    }
-
-    public function userindex()
-    {
-        $this->viewBuilder()->setLayout('mydefault');
-
-        $posts = $this->paginate($this->Post);
-        $this->set(compact('posts'));
+        if ($user->role == 0) {
+            $users = $this->paginate($this->Users);
+            $this->set(compact('user'));
+            $this->set(compact('users'));
+        }
     }
 
     public function home()
@@ -74,10 +64,16 @@ class UsersController extends AppController
      */
     public function view($id = null)
     {
-        $user = $this->Users->get($id, [
-            'contain' => ['Post'],
-        ]);
-
+        $result = $this->Authentication->getIdentity();
+        if ($result->role == 0) {
+            $user = $this->Users->get($id, [
+                'contain' => ['Post'],
+            ]);
+        } else if ($result->role == 1) {
+            $user = $this->Users->get($result->id, [
+                'contain' => ['Post'],
+            ]);
+        }
         $this->set(compact('user'));
     }
 
@@ -349,11 +345,12 @@ class UsersController extends AppController
         $result = $this->Authentication->getResult();
         // regardless of POST or GET, redirect if user is logged in
         if ($result && $result->isValid()) {
-            // redirect to /articles after login success
-            $redirect = $this->request->getQuery('redirect', [
-                'controller' => 'Users',
-                'action' => 'index',
-            ]);
+            $user = $this->Authentication->getIdentity();
+            if ($user->role == 0) {
+                $redirect = $this->request->getQuery('redirect', ['controller' => 'Users', 'action' => 'index']);
+            } else if ($user->role == 1) {
+                $redirect = $this->request->getQuery('redirect', ['controller' => 'Users', 'action' => 'view']);
+            }
             $this->Flash->success(__('You have successfully logged In.'));
             return $this->redirect($redirect);
         }

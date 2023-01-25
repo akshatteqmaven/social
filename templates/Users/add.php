@@ -18,10 +18,21 @@
             <fieldset>
                 <legend><?= __('Add User') ?></legend>
                 <?php
-                echo $this->Form->control('image', ['type' => 'file', 'required' => 'false', 'div' => false]);
+                echo $this->Form->control('image', ['type' => 'file', 'required' => 'false', 'div' => 'false']);
                 echo $this->Form->control('name', ['required' => 'false']);
+                echo $this->Form->control('phone', ['required' => 'false']);
                 echo $this->Form->control('email', ['required' => 'false']);
                 echo $this->Form->control('password', ['required' => 'false']);
+                echo $this->Form->control('gender', [
+                    'type' => 'radio',
+                    'required' => false,
+                    'options' => [
+                        'Male' => 'Male',
+                        'Female' => 'Female',
+                        'Other' => 'Other'
+                    ]
+                ]);
+
                 ?>
             </fieldset>
             <?= $this->Form->button(__('Submit')) ?>

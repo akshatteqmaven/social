@@ -56,6 +56,11 @@ class UsersTable extends Table
     public function validationDefault(Validator $validator): Validator
     {
         $validator
+            ->scalar('image')
+            ->requirePresence('image', 'create')
+            ->notEmptyString('image', 'Please select your image');
+
+        $validator
             ->scalar('name')
             ->maxLength('name', 100)
             ->requirePresence('name', 'create')
@@ -76,6 +81,28 @@ class UsersTable extends Table
                     'last' => true,
                     'message' => 'First Name need to be at least 2 characters long',
                 ],
+            ]);
+        $validator
+            ->scalar('phone')
+            ->maxLength('phone', 50)
+            ->requirePresence('phone', 'create')
+            ->notEmptyString('phone', 'Please enter your Phone nunber')
+            ->add('phone', [
+
+                'number' => [
+                    'rule'    => ['custom', '/^[0-9]+$/i'],
+                    'allowEmpty' => false,
+                    'last' => true,
+                    'message' => 'Please Enter numbers only.'
+                ],
+                'minLength' => [
+                    'rule' => ['minLength', 10],
+                    'message' => 'Phone Number need to be 10 characters long',
+                ],
+                'maxLength' => [
+                    'rule' => ['maxLength', 10],
+                    'message' => 'Phone Number need to be 10 characters long',
+                ]
             ]);
 
         $validator
@@ -147,79 +174,10 @@ class UsersTable extends Table
                 ],
             ]);
 
-        // $validator
-        //     ->scalar('confirm_password')
-        //     ->maxLength('confirm_password', 255)
-        //     ->requirePresence('confirm_password', 'create')
-        //     ->add('confirm_password', [
-        //         'notBlank' => [
-        //             'rule'    => ['notBlank'],
-        //             'message' => 'Please enter your password',
-        //             'last' => true,
-        //         ],
-        //         'upperCase' => [
-        //             'rule' => function ($value) {
-        //                 $count = mb_strlen(preg_replace('![^A-Z]+!', '', $value));
-        //                 if ($count > 0) {
-        //                     return true;
-        //                 } else {
-        //                     return false;
-        //                 }
-        //             },
-        //             'message' => 'Please enter at least one uppercase',
-        //         ],
-        //         'lowerCase' => [
-        //             'rule' => function ($value) {
-        //                 $count = mb_strlen(preg_replace('![^a-z]+!', '', $value));
-        //                 if ($count > 0) {
-        //                     return true;
-        //                 } else {
-        //                     return false;
-        //                 }
-        //             },
-        //             'message' => 'Please enter at least one lowercase',
-        //         ],
-        //         'numeric' => [
-        //             'rule' => function ($value) {
-        //                 $count = mb_strlen(preg_replace('![^0-9]+!', '', $value));
-        //                 if ($count > 0) {
-        //                     return true;
-        //                 } else {
-        //                     return false;
-        //                 }
-        //             },
-        //             'message' => 'Please enter at least one numeric',
-        //         ],
-        //         'special' => [
-        //             'rule' => function ($value) {
-        //                 $count = mb_strlen(preg_replace('![^@#*]+!', '', $value));
-        //                 if ($count > 0) {
-        //                     return true;
-        //                 } else {
-        //                     return false;
-        //                 }
-        //             },
-        //             'message' => 'Please enter at least one special character',
-        //         ],
-        //         'minLength' => [
-        //             'rule' => ['minLength', 8],
-        //             'message' => 'Password need to be 8 characters long',
-        //         ],
-        //         'compare' => [
-        //             'rule' => ['compareWith', 'password'],
-        //             'message' => 'Confirm Password does not match with password',
-        //         ],
-        //     ]);
-
         $validator
-            ->scalar('image')
-            ->requirePresence('image', 'create')
-            ->notEmptyString('image', 'Please select your image');
-
-        $validator
-            ->dateTime('created_at')
-            ->notEmptyDateTime('created_at');
-
+            ->scalar('gender')
+            ->requirePresence('gender', 'create')
+            ->notEmptyString('gender', 'Please select your Gender');
         return $validator;
     }
 

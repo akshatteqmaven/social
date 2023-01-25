@@ -12,10 +12,10 @@
             <thead>
                 <tr>
                     <th><?= $this->Paginator->sort('id') ?></th>
+                    <th><?= $this->Paginator->sort('post_image') ?></th>
                     <th><?= $this->Paginator->sort('Author Name') ?></th>
                     <th><?= $this->Paginator->sort('title') ?></th>
                     <th><?= $this->Paginator->sort('body') ?></th>
-                    <th><?= $this->Paginator->sort('post_image') ?></th>
                     <th><?= $this->Paginator->sort('created_at') ?></th>
                     <th class="actions"><?= __('Actions') ?></th>
                 </tr>

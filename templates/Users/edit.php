@@ -14,12 +14,12 @@
     </aside>
     <div class="column-responsive column-80">
         <div class="users form content">
-            <?= $this->Form->create($user,['enctype' => 'multipart/form-data']) ?>
+            <?= $this->Form->create($user, ['enctype' => 'multipart/form-data']) ?>
             <fieldset>
                 <legend><?= __('Edit User') ?></legend>
                 <div class="row">
                     <div class="col-md-6">
-                    <?php echo $this->Form->control('image', ['type' => 'file', 'required' => 'false']); ?>
+                        <?php echo $this->Form->control('image', ['type' => 'file', 'required' => 'false']); ?>
                     </div>
                     <div class="col-md-6">
                         <td><?= $this->Html->image(h($user->image), array('width' => '300px')) ?></td>
@@ -27,7 +27,10 @@
                 </div>
                 <?php
                 echo $this->Form->control('name', ['required' => 'false']);
+                echo $this->Form->control('phone', ['required' => 'false']);
                 echo $this->Form->control('email', ['required' => 'false']);
+                echo $this->Form->control('gender', array('type' => 'radio'));
+                echo $this->Form->radio('gender', ['Male' => 'Male', 'Female' => 'Female', 'Other' => 'Other'], ['required' => 'false']);
                 ?>
             </fieldset>
             <?= $this->Form->button(__('Submit')) ?>

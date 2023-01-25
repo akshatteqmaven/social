@@ -29,6 +29,14 @@ use Cake\Controller\Controller;
                     <td><?= h($user->email) ?></td>
                 </tr>
                 <tr>
+                    <th><?= __('Phone Number') ?></th>
+                    <td><?= h($user->phone) ?></td>
+                </tr>
+                <tr>
+                    <th><?= __('Gender') ?></th>
+                    <td><?= h($user->gender) ?></td>
+                </tr>
+                <tr>
                     <th><?= __('Created At') ?></th>
                     <td><?= h($user->created_at) ?></td>
                 </tr>
