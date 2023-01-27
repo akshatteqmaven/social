@@ -51,7 +51,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 <body>
     <nav class="top-nav">
         <div class="top-nav-title">
-            <a href="<?= $this->Url->build('/') ?>"><span>Home</span>Page</a>
+            <a href="<?= $this->Url->build('/admin') ?>"><span>Home</span>Page</a>
         </div>
     </nav>
     <main class="main">
