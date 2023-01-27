@@ -76,7 +76,7 @@ class UsersController extends AppController
         }
         $this->set(compact('user'));
     }
-
+    // -----------------------------post view---------------------------------------
     public function postview($id = null, $userid = null)
     {
         $post = $this->Post->get($id, [
@@ -104,6 +104,7 @@ class UsersController extends AppController
      *
      * @return \Cake\Http\Response|null|void Redirects on successful add, renders view otherwise.
      */
+    // ---------------------------------registration page---------------------------------
     public function add()
     {
         // $this->viewBuilder()->setLayout('mydefault');
@@ -137,7 +138,7 @@ class UsersController extends AppController
         }
         $this->set(compact('user'));
     }
-
+    // -----------------------------------here we are adding the post-------------------------------------
     public function postadd($userid)
     {
         $post = $this->Post->newEmptyEntity();
@@ -224,7 +225,7 @@ class UsersController extends AppController
         }
         $this->set(compact('user'));
     }
-
+    // ---------------------------------------here we are editing the post-------------------------------
     public function postedit($id = null, $userid = null)
     {
         $post = $this->Post->get($id, [
@@ -267,6 +268,7 @@ class UsersController extends AppController
         }
         $this->set(compact('post'));
     }
+    // ------------------------------------here we are editing the comments-----------------------------
 
     public function commentedit($id = null, $postid = null, $userid = null)
     {
@@ -306,7 +308,7 @@ class UsersController extends AppController
 
         return $this->redirect(['action' => 'index']);
     }
-
+    // --------------------------------------------here we are deleting the post---------------------------
     public function postdelete($id = null, $userid = null)
     {
         $this->request->allowMethod(['post', 'delete']);
@@ -319,7 +321,7 @@ class UsersController extends AppController
 
         return $this->redirect(['controller' => 'users', 'action' => 'view', $userid]);
     }
-
+    // ----------------------------------------------here we are deleting the comments------------------------
     public function commentdelete($id = null, $postid = null, $userid = null)
     {
         $this->request->allowMethod(['post', 'delete']);
@@ -332,14 +334,14 @@ class UsersController extends AppController
 
         return $this->redirect(['action' => 'postview', $postid, $userid]);
     }
-
+    // ------here we giving the permissions to page which can be accessed without login the session------
     public function beforeFilter(\Cake\Event\EventInterface $event)
     {
         parent::beforeFilter($event);
         $this->Authentication->addUnauthenticatedActions(['login', 'add']);
     }
 
-    public function login()
+    public function login() // login function//
     {
         $this->request->allowMethod(['get', 'post']);
         $result = $this->Authentication->getResult();
@@ -360,7 +362,7 @@ class UsersController extends AppController
         }
     }
 
-    public function logout()
+    public function logout()  //logout function//
     {
         $result = $this->Authentication->getResult();
         // regardless of POST or GET, redirect if user is logged in
@@ -371,7 +373,7 @@ class UsersController extends AppController
         }
     }
 
-    public function forgot()
+    public function forgot() // forgot password function//
     {
         $user = $this->Users->newEmptyEntity();
         if ($this->request->is('post')) {
@@ -404,7 +406,7 @@ class UsersController extends AppController
         $this->set(compact('user'));
     }
 
-    public function reset()
+    public function reset()  //reseting the password//
     {
         $user = $this->Users->newEmptyEntity();
         $token = $_REQUEST['token'];
@@ -432,7 +434,7 @@ class UsersController extends AppController
 
         $this->set(compact('user'));
     }
-
+    // here we are getting the pagination how much data show be display in index page at a time.//
     public $paginate = [
         'limit' => 5
     ];
