@@ -31,6 +31,7 @@
                         <td><?= h($post->created_at) ?></td>
                         <td class="actions">
                             <?= $this->Html->link(__('View'), ['action' => 'postview', $post->id]) ?>
+                            <?= $this->Html->link(__('Edit'), ['action' => 'postedit', $post->id]) ?>
                         </td>
                     </tr>
                 <?php endforeach; ?>
