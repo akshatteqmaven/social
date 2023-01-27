@@ -8,7 +8,6 @@
 <div class="row">
     <aside class="column">
         <div class="side-nav">
-            <h4 class="heading"><?= __('Actions') ?></h4>
             <?= $this->Html->link(__('Login'), ['action' => 'login'], ['class' => 'side-nav-item']) ?>
         </div>
     </aside>
@@ -16,7 +15,7 @@
         <div class="users form content">
             <?= $this->Form->create($user, ['enctype' => 'multipart/form-data']) ?>
             <fieldset>
-                <legend><?= __('Add User') ?></legend>
+                <legend><?= __('Registration') ?></legend>
                 <?php
                 echo $this->Form->control('image', ['type' => 'file', 'required' => 'false', 'div' => 'false']);
                 echo $this->Form->control('name', ['required' => 'false']);

@@ -8,7 +8,6 @@
 <div class="row">
     <aside class="column">
         <div class="side-nav">
-            <h4 class="heading"><?= __('Actions') ?></h4>
             <?= $this->Html->link(__('Register'), ['action' => 'add'], ['class' => 'side-nav-item']) ?>
         </div>
     </aside>
@@ -18,8 +17,8 @@
             <fieldset>
                 <h2><?= __('Login User') ?></h2>
                 <?php
-                echo $this->Form->control('email', ['required' => false]);
-                echo $this->Form->control('password', ['required' => false]);
+                echo $this->Form->control('email');
+                echo $this->Form->control('password');
                 ?>
             </fieldset>
             <?= $this->Form->button(__('Login')) ?>

@@ -5,7 +5,7 @@
  */
 ?>
 <div class="post index content">
-    <?= $this->Html->link(__('Go back'), ['controller' => 'Users', 'action' => 'index'], ['class' => 'button float-right']) ?>
+    <?= $this->Html->link(__('Index'), ['controller' => 'Users', 'action' => 'index'], ['class' => 'button float-right']) ?>
     <h3><?= __('Post') ?></h3>
     <div class="table-responsive">
         <table>
